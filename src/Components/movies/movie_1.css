@@ -1,0 +1,53 @@
+.container
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-bottom: 160px;
+    justify-content: space-evenly;
+}
+.main
+{
+    margin: 5vh 0vw;
+}
+.movies_p
+{
+    color: white;
+    text-align: initial;
+    letter-spacing: 1.5px;
+    margin-left: 2.6vw;
+    margin-top: 70px;
+    word-break: break-word;
+    font-size: 24px;
+    font-weight: 600;
+}
+.movie_img
+{
+    overflow: hidden;
+}
+.movie_poster
+{
+    height: 60vh;
+    border-radius: 7px;
+}
+.movie_img .movie_poster 
+{
+    transition: transform .5s ease;
+
+}
+.movie_img .movie_poster:hover
+{
+    transform: scale(1.2);
+}
+
+.movie_name
+{
+    color: antiquewhite;
+    font-size: 3vh;
+    text-align: initial;
+}
+.genres
+{
+    color: darkgray;
+    text-align: initial;
+}

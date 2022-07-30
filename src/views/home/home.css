@@ -1,0 +1,19 @@
+.images:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    background: linear-gradient(90deg, rgb(39 40 41) 0%, rgb(39 40 41) 35%, rgba(83, 100, 141, 0) 100%);
+    z-index: -1;
+}
+
+.images:before:before {
+    background: linear-gradient(90deg, rgb(39 40 41) 0%, rgb(39 40 41) 35%, rgba(83, 100, 141, 0) 100%);
+    width: 100%;
+    z-index: -1;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
