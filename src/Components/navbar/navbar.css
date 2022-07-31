@@ -3,6 +3,11 @@
     margin: 0;
     background-color: #202020;
 }
+.logo
+{
+    width: 14vw;
+    background: #272829;
+}
 .navbar
 {
     background: #272829;

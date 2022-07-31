@@ -17,3 +17,7 @@
 *, ::after, ::before {
     box-sizing: border-box;
 }
+.react-slideshow-container
+{
+    margin-top: 30px;
+}
