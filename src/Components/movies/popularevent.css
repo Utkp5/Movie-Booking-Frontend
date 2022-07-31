@@ -1,20 +1,60 @@
-.popular_container
+.featured
 {
-border: 2px solid pink;
+    background-image: linear-gradient(to top, #202020, rgb(2 2 2 / 90%)), url(https://excellencetheme.com/templates/avastream/images/parallax/best-series.jpg);
+    height: 60vh;
+    margin-top: 120px;
+}
+.featured_info_flex
+{
+    position: relative;
+    top: 37px;
+}
+.featured_info_p1
+{
+    font-size: xxx-large;
+    color: white;
+    font-weight: 700;
+}
+.featured_info_p2
+{
+    color: darkgray;
+    font-size: x-large;
+    font-weight: 500;
 }
 
-.main
+.popular_container
 {
-
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: -120px;
+    padding: 0px 50px;
+}
+.popular_main
+{
+    margin: 11px 7px;
 }
 
 .popular_div_img
 {
-
+    overflow: hidden;
+    
 }
 .popular_img
 {
-
+    filter: brightness(0.5);
+    width: 230px;
+    border-radius: 10px;
+}
+.popular_div_img .popular_img 
+{
+    transition: transform 0.5s ease;
+}
+.popular_div_img .popular_img:hover
+{
+    transform: scale(1.1);
+    transition: all 0.5s;
+    filter: none;
 }
 .popular_name
 {

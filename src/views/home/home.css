@@ -21,35 +21,22 @@ body
 {
     background-color: #202020;
 }
-.react-slideshow-container
+/* .react-slideshow-container
 {
     margin-top: 20px;
-}
+} */
 .banner
 {
     margin-top: 135px;
     width: 98vw;
 }
-.featured
+.laughter_banner
 {
-    background-image: linear-gradient(to top, #202020, rgb(2 2 2 / 90%)), url(https://excellencetheme.com/templates/avastream/images/parallax/best-series.jpg);
-    height: 90vh;
-    margin-top: 120px;
+    margin-top: 135px;
+    width: 98vw;
 }
-.featured_info_flex
+.rupay_banner
 {
-    position: relative;
-    top: 37px;
-}
-.featured_info_p1
-{
-    font-size: xxx-large;
-    color: white;
-    font-weight: 700;
-}
-.featured_info_p2
-{
-    color: darkgray;
-    font-size: x-large;
-    font-weight: 500;
+    margin-top: 135px;
+    width: 98vw;
 }

@@ -5,6 +5,8 @@ import img_1 from "../../Assets/img/banner/img1.jpg";
 import img_2 from "../../Assets/img/banner/img2.jpg";
 import img_3 from "../../Assets/img/banner/img3.jpg";
 import img_4 from "../../Assets/img/banner/4.png";
+import laughterBanner from "../../Assets/img/laughter/laughter_utkp_banner.avif";
+import rupayBanner from "../../Assets/img/banner/rupay.avif";
 import discount from "../../Assets/img/banner/discount.avif";
 import "react-slideshow-image/dist/styles.css";
 import { Zoom } from "react-slideshow-image";
@@ -15,7 +17,6 @@ function Home() {
   const firstSlideShow = [img_1, img_2, img_3, img_4];
   const secondSlideShow = [
     discount,
-    "https://assets-in.bmscdn.com/promotions/cms/creatives/1658901247645_lolaweb.jpg",
   ];
   return (
     <div>
@@ -47,13 +48,9 @@ function Home() {
         ))}
       </Zoom>
       <img className="banner" src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/lead-in-v3-collection-202102040828.png" alt="" />
-      <div className="featured">
-        <div className="featured_info_flex">
-          <p className="featured_info_p1" >Featured</p>
-          <p className="featured_info_p2" >Popular Events</p>
-        </div>
+      <img className="laughter_banner" src={laughterBanner} alt="" />
         <Popularevent />
-      </div>
+        <img className="rupay_banner" src={rupayBanner} alt="" />
     </div>
   );
 }
