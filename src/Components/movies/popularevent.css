@@ -1,0 +1,29 @@
+.popular_container
+{
+border: 2px solid pink;
+}
+
+.main
+{
+
+}
+
+.popular_div_img
+{
+
+}
+.popular_img
+{
+
+}
+.popular_name
+{
+    color: antiquewhite;
+    font-size: 3vh;
+    text-align: initial;
+}
+.popular_subname
+{
+    color: darkgray;
+    text-align: initial;
+}

@@ -37,7 +37,7 @@ function Movie_1() {
   return (
     <div>
     <p className="movies_p">Recommended Movies</p>
-      <div className="container">
+      <div className="movie_1_container">
         {movies.map((movies) => {
           return (
             <div className="main">

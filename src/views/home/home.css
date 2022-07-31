@@ -17,7 +17,39 @@
 *, ::after, ::before {
     box-sizing: border-box;
 }
+body
+{
+    background-color: #202020;
+}
 .react-slideshow-container
 {
-    margin-top: 30px;
+    margin-top: 20px;
+}
+.banner
+{
+    margin-top: 135px;
+    width: 98vw;
+}
+.featured
+{
+    background-image: linear-gradient(to top, #202020, rgb(2 2 2 / 90%)), url(https://excellencetheme.com/templates/avastream/images/parallax/best-series.jpg);
+    height: 90vh;
+    margin-top: 120px;
+}
+.featured_info_flex
+{
+    position: relative;
+    top: 37px;
+}
+.featured_info_p1
+{
+    font-size: xxx-large;
+    color: white;
+    font-weight: 700;
+}
+.featured_info_p2
+{
+    color: darkgray;
+    font-size: x-large;
+    font-weight: 500;
 }
