@@ -56,9 +56,10 @@ function Home() {
 
       <img className="rupay_banner" src={rupayBanner} alt="" />
 
+      <Movie_2 />
+
       <Moviefacts />
       
-      <Movie_2 />
     </div>
   );
 }

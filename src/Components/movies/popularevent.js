@@ -28,12 +28,12 @@ function Popularevent() {
         {
             popularImg : require ("../../Assets/img/laughter/laughter_utkp_5.jpg"),
             popularName : "A Standup Comedy Show",
-            popularSubname : "Maharana Pratap Auditorium Noida",
+            popularSubname : "Maharana Auditorium Noida",
         },
         {
             popularImg : require ("../../Assets/img/laughter/laughter_utkp_6.avif"),
             popularName : "Abhishek Upmanyu",
-            popularSubname : "Kedarnath Sahni Auditorium Delhi",
+            popularSubname : "Kedarnath Auditorium Delhi",
         },
         {
             popularImg : require ("../../Assets/img/laughter/laughter_utkp_7.jpg"),

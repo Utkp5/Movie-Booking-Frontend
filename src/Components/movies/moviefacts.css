@@ -27,7 +27,7 @@
 {
     display: block;
     width: 20vw;
-    height: auto;
+    height: 62vh;
     border-radius: 12px;
 }
 .movieFacts_overlay
@@ -46,14 +46,13 @@
 .movieFacts_text
 {
     color: white;
-    font-size: 20px;
+    font-size: 17px;
     position: absolute;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    text-align: center;
 }
 .Factscontainer_1:hover .movieFacts_overlay {
     height: 100%;
