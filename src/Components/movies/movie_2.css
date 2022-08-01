@@ -1,0 +1,51 @@
+.movie2_p
+{
+    font-size: xx-large;
+    color: aliceblue;
+    font-weight: 600;
+    margin-left: 62px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+.movie2_container
+{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0vh 3vw;
+}
+.movie2_main
+{
+    padding: 15px 20px;
+}
+.movie2_img_div
+{
+overflow: hidden;
+border-radius: 2%;
+
+}
+.movie2_img_div .movie2_img
+{
+    transition: transform .5s ease;
+}
+.movie2_img_div .movie2_img:hover
+{
+    transform :scale(1.2)
+}
+.movie2_img
+{
+    height: 55vh;
+    border-radius: 2%;
+    cursor: pointer;
+}
+.movie2_name
+{
+    color: antiquewhite;
+    font-size: 3vh;
+    text-align: initial;
+}
+.movie2Genres
+{
+    color: darkgray;
+    text-align: initial;
+}
