@@ -24,8 +24,8 @@
 {
     text-decoration: none;
     font-size: 3.5vh;
-    padding: 1vh 1vw;
-    margin: 0vh 1.5vw;
+    padding: 1vh 0.5vw;
+    margin: 0vh 1vw;
     color: white;
     background-color: transparent;
 }
@@ -45,6 +45,11 @@
     outline: none;
     font-size: 3vh;
     border: 2px solid crimson;
+}
+.navbar_elements .signin_button
+{
+    margin: 0;
+    padding: 0;
 }
 .navbar_button:hover
 {

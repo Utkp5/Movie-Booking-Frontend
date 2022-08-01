@@ -1,4 +1,4 @@
-.images:before {
+/* .images:before {
     content: '';
     position: absolute;
     top: 0;
@@ -16,8 +16,8 @@
 }
 *, ::after, ::before {
     box-sizing: border-box;
-}
-body
+} */
+.home_return_div
 {
     background-color: #202020;
 }

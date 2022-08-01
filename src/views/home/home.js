@@ -19,7 +19,7 @@ function Home() {
     discount,
   ];
   return (
-    <div>
+    <div className="home_return_div">
       <Navbar />
 
       <Zoom scale={0.7} indicators={true}>
@@ -47,7 +47,6 @@ function Home() {
           </div>
         ))}
       </Zoom>
-      <img className="banner" src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120:q-80/lead-in-v3-collection-202102040828.png" alt="" />
       <img className="laughter_banner" src={laughterBanner} alt="" />
         <Popularevent />
         <img className="rupay_banner" src={rupayBanner} alt="" />
