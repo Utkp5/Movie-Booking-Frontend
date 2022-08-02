@@ -14,6 +14,7 @@ import Movie_1 from "../../Components/movies/movie_1";
 import Popularevent from "../../Components/movies/popularevent";
 import Moviefacts from "../../Components/movies/moviefacts";
 import Movie_2 from "../../Components/movies/movie_2";
+import Footer from "../../Components/footer/footer";
 
 function Home() {
   const firstSlideShow = [img_1, img_2, img_3, img_4];
@@ -59,6 +60,8 @@ function Home() {
       <Movie_2 />
 
       <Moviefacts />
+
+      <Footer />
       
     </div>
   );

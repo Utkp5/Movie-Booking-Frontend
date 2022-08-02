@@ -1,0 +1,110 @@
+*
+{
+    margin: 0;
+}
+footer
+{
+height: 25rem;
+margin-top: 70px;
+
+}
+.footer_svg
+{
+    background: #272829;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+.svg
+{
+    width: 50px;
+    fill: #f8f8ff75;
+}
+.footer_a
+{
+    text-decoration: none;
+}
+.footer_p
+{
+    color: #dcdcdc6e;
+    font-size: smaller;
+}
+.ft-p
+{
+    margin: 0vh -1vw;
+}
+.ft-p1
+{
+margin: 0vh -0.5vw;
+}
+.footer_img
+{
+    display: flex;
+    justify-content: center;
+    height: 11vh;
+    align-items: center;
+}
+.footer_logo
+{
+    width: 140px;
+    margin: 4vh 42vw;
+    display: block;
+}
+.footer_svg1
+{
+    margin: 1vh 37vw;
+    display: flex;
+    justify-content: space-evenly;
+    width: 21vw;
+}
+.footer_svg1_flex
+{
+    display: flex;
+    justify-content: center;
+    height: 11vh;
+}
+.footer_svg_1
+{
+    width: 50px;
+    fill: #f8f8ff75;
+}
+.footer_info
+{
+    margin: 2vh 0vw;
+}
+.footer_info_p
+{
+    text-align: center;
+    color: #dcdcdc24;
+}
+.footer_owner
+{
+    height: 11vh;
+    font-size: 5vh;
+    color: darkgray;
+    text-align: center;
+    margin: 5vh 0vw;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer_owner_svg
+{
+    fill: red;
+    width: 40px;
+    animation: Heartpopup 1s infinite linear;;
+}
+@keyframes Heartpopup {
+    from
+    {
+        transform: scale(1);
+        transition: all ease-in-out;
+    }
+    to
+    {
+        transform: scale(1.1);
+        transition: all ease-in-out;
+    }
+}
