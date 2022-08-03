@@ -1,5 +1,91 @@
 .about_return_div
 {
     background-color: #202020;
-    height: 100vh;
+    height: 200vh;
+}
+.about_banner
+{
+    background-image:  url(https://excellencetheme.com/templates/avastream/images/parallax/sub-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    filter: brightness(0.4);
+}
+.about_banner_p
+{
+    text-align: center;
+    font-size: 42px;
+    color: ghostwhite;
+}
+#our_stats
+{
+    font-size: 4vh;
+    margin: 39px 135px;
+}
+.our_statistics
+{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 12vh;
+}
+.our_stats_svg_flex
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.our_stats_svg
+{
+    width: 5vw;
+    fill: crimson;
+}
+.our_stats_svg1
+{
+    fill: crimson;
+    width: 3.5vw;
+}
+.about_info_div
+{
+    height: 74vh;
+}
+.about_info_div_img
+{
+    background: linear-gradient(to right, rgb(12, 21, 26), rgba(0, 0, 0, 0.69));
+    background-image:  url(https://excellencetheme.com/templates/avastream/images/parallax/about.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 100px 0 80px;
+    height: 65vh;
+    filter: brightness(0.10);
+}
+#about_info_div_flex
+{
+    position: relative;
+    top: -61vh;
+    display: flex;
+    justify-content: space-around;
+}
+ .about_img{
+    width: 36vw;
+    filter: none;
+}
+.about_info_div_content
+{
+width: 41vw;
+}
+.about_content_p1
+{
+font-size: x-large;
+}
+.about_content_p2
+{
+font-size: larger;
+margin-top: 40px;
 }

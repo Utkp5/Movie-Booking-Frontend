@@ -13,14 +13,16 @@ function Signin() {
       userEmail,
       password,
     };
-    await axios.post("http://localhost:5000/api/signin",user).then(function (response) {
+    await axios.post("http://localhost:5000/api/Login",user).then(function (response) {
 
       if (response.data.token) {
         localStorage.setItem("token",response.data.token);
+        window.location.href = "/Movie";
       }
 
     }).catch(function (error) {
       console.log(error);
+      
     });
   }
   return (
