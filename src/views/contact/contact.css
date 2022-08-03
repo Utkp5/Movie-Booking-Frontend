@@ -1,5 +1,99 @@
 .contact_return_div
 {
     background-color: #202020;
-    height: 100vh;
+    height: 200vh;
+}
+.contact_banner_div{
+    background-image: linear-gradient(to right, rgb(12, 21, 26), rgba(0, 0, 0, 0.69)), url(https://excellencetheme.com/templates/avastream/images/parallax/sub-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+}
+.contact_banner_p
+{
+    font-size: xx-large;
+    color: ghostwhite;
+    text-align: center;
+    font-weight: 700;
+}
+.contact-form
+{
+
+}
+.contact-form-p
+{
+    text-align: center;
+    font-size: 4vh;
+    margin: 5vh 0vw;
+}
+.input-text-1
+{
+    width: 30vw !important;
+    margin: 4vh 10vw;
+    height: 6vh;
+    color: ghostwhite;
+    border-radius: 5px;
+    background-color: #27292c;
+    border: none;
+}
+.input-text-2
+{
+    width: 30vw !important;
+    margin: 4vh 0vw;
+    height: 6vh;
+    color: ghostwhite;
+    border-radius: 5px;
+    background-color: #27292c;
+    border: none;
+}
+.input-text-3
+{
+    width: 30vw !important;
+    margin: 4vh 10vw;
+    height: 6vh;
+    border-radius: 5px;
+    background-color: #27292c;
+    border: none;
+    color: ghostwhite;
+}
+.input-text-4
+{
+    width: 30vw !important;
+    margin: 4vh 0vw;
+    height: 6vh;
+    border-radius: 5px;
+    background-color: #27292c;
+    border: none;
+    color: ghostwhite;
+}
+.input-text-5
+{
+    width: 70vw !important;
+    margin: 4vh 10vw;
+    height: 12vh;
+    border-radius: 5px;
+    background-color: #27292c;
+    border: none;
+    color: ghostwhite;
+}
+.contact_button
+{
+    padding: 1.5vh 1vw;
+    border-radius: 18px;
+    outline: none;
+    border: 2px solid crimson;
+    background: crimson;
+    color: ghostwhite;
+    font-size: large;
+    cursor: pointer;
+    margin: 3vh 10vw;
+    transition: all 0.4s;
+}
+.contact_button:hover
+{
+    background-color: rgb(230, 53, 88);
+    border: 2px solid rgb(230, 53, 88);
 }

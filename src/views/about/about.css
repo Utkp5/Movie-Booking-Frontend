@@ -5,20 +5,20 @@
 }
 .about_banner
 {
-    background-image:  url(https://excellencetheme.com/templates/avastream/images/parallax/sub-header.jpg);
+    background-image: linear-gradient(to right, rgb(12, 21, 26), rgba(0, 0, 0, 0.69)), url(https://excellencetheme.com/templates/avastream/images/parallax/sub-header.jpg);
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
     position: relative;
     background-repeat: no-repeat;
     padding: 100px 0;
-    filter: brightness(0.4);
 }
 .about_banner_p
 {
     text-align: center;
-    font-size: 42px;
+    font-size: xx-large;
     color: ghostwhite;
+    font-weight: 700;
 }
 #our_stats
 {

@@ -77,7 +77,7 @@ function Footer() {
           </div>
           <div className="footer_info">
             <p className="footer_info_p">
-              Copyright 2022 © Just Book Entertainment Pvt. Ltd. All Rights
+              Copyright 2022 © Owner Pandit Utkarsh Just Book Entertainment Pvt. Ltd. All Rights
               Reserved.
               <br />
               The content and images used on this site are copyright protected
