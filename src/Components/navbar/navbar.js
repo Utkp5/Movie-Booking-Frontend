@@ -14,7 +14,7 @@ function Navbar() {
           <a href="/About">About</a>
           <a href="/Movie">Movies</a>
           <a href="/Contact">Contact</a>
-          <a href="/Register" className="signin_button"><button className="navbar_button" >Sign in</button></a>
+          <a href="/Register" className="signin_button"><button className="navbar_button" >Sign up</button></a>
           <a href="Login" className="signin_button"><button className="navbar_button" >Log in</button></a>
         </div>
       </div>
