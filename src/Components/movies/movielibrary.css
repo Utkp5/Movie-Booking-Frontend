@@ -1,0 +1,68 @@
+*
+{
+    margin: 0;
+}
+.movie-page-banner{
+    background-image: linear-gradient(to right, rgb(12, 21, 26), rgba(0, 0, 0, 0.69)), url(https://excellencetheme.com/templates/avastream/images/parallax/sub-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 100px 0;
+    margin-bottom: 70px;
+}
+.movie-page-banner-p
+{
+    font-size: xx-large;
+    color: ghostwhite;
+    text-align: center;
+    font-weight: 700;
+}
+
+.movie-page
+{
+    /* height: 740vh; */
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.movie-page-card
+{
+    margin: 5vh 0vw;
+}
+.movie-page-card-div-img
+{
+    overflow: hidden;
+    height: 60vh;
+    border-radius: 12px;
+}
+.movie-page-card-div-img .movie-page-card-img{
+    transition: all ease 0.5s;
+}
+.movie-page-card-div-img .movie-page-card-img:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.movie-page-card-img
+{
+    border-radius: 12px;
+    height: 60vh;
+}
+.movie-page-p
+{
+    font-size: 3.3vh;
+    color: ghostwhite;
+}
+.movie-page-p1
+{
+    color: ghostwhite;
+    font-size: 2.5vh;
+}
+.movie-page-p2
+{
+    color: ghostwhite;
+    font-size: 2.5vh;
+}
