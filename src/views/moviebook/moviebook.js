@@ -35,9 +35,10 @@ function Moviebook() {
             <div>
             <img className='movie-book-card-img' src={Moviebook.movielbImg} alt="" />
             </div> 
-            <div>
+            <div className='movie-book-div2'>
                 <p className="movie-book-p" >{Moviebook.movieName}</p>
-                <p className="movie-book-p" >{Moviebook.language} . {Moviebook.genres} . {Moviebook.year}</p>
+                <p className="movie-book-p1" >{Moviebook.language} . {Moviebook.genres} . {Moviebook.year}</p>
+                <p className="movie-book-p2" >{Moviebook.time}</p>
             </div>
         </div>
     </div>

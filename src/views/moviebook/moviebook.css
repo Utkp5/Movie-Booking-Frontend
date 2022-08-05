@@ -5,16 +5,36 @@
 .return_div_moviebook
 {
     background-color: #202020;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .movie-book-card-img
 {
     height: 70vh;
+    border-radius: 11px;
 }
 .movie-book-flex
 {
-    border: 2px solid red;
+    display: flex;
 }
 .movie-book-p
 {
   color: ghostwhite;   
+  font-size: xx-large;
+}
+.movie-book-p1
+{
+    color: ghostwhite;   
+    font-size: x-large;
+}
+.movie-book-p2
+{
+    color: ghostwhite;   
+    font-size: larger;
+}
+.movie-book-div2
+{
+    margin: 0vh 4vw;
 }

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./movie_2.css";
 
-function Movie_2() {
+function MovieSecond() {
   const [Movie2, setmovie2] = useState([
     {
       movie2Img: require ("../../Assets/img/movielibrary/HO00004.webp"),
@@ -67,4 +67,4 @@ function Movie_2() {
   );
 }
 
-export default Movie_2;
+export default MovieSecond;

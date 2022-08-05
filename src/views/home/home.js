@@ -13,7 +13,7 @@ import { Zoom } from "react-slideshow-image";
 import Movie_1 from "../../Components/movies/movie_1";
 import Popularevent from "../../Components/movies/popularevent";
 import Moviefacts from "../../Components/movies/moviefacts";
-import Movie_2 from "../../Components/movies/movie_2";
+import MovieSecond from "../../Components/movies/movie_2";
 import Footer from "../../Components/footer/footer";
 
 function Home() {
@@ -57,7 +57,7 @@ function Home() {
 
       <img className="rupay_banner" src={rupayBanner} alt="" />
 
-      <Movie_2 />
+      <MovieSecond />
 
       <Moviefacts />
 
