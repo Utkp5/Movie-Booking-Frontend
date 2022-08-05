@@ -19,14 +19,12 @@
     text-align: center;
     font-weight: 700;
 }
-.contact-form
-{
 
-}
 .contact-form-p
 {
     text-align: center;
     font-size: 4vh;
+    color: ghostwhite;
     margin: 5vh 0vw;
 }
 .input-text-1

@@ -23,7 +23,12 @@
 #our_stats
 {
     font-size: 4vh;
+    color: ghostwhite;
     margin: 39px 135px;
+}
+.about_stats_svg_p
+{
+    color: ghostwhite;
 }
 .our_statistics
 {
@@ -83,9 +88,12 @@ width: 41vw;
 .about_content_p1
 {
 font-size: x-large;
+color: ghostwhite;
 }
 .about_content_p2
 {
 font-size: larger;
 margin-top: 40px;
+color: ghostwhite;
+
 }
