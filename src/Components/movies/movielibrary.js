@@ -34,7 +34,9 @@ function Movielb() {
              return (
                 <div className="movie-page-card">
                   <div className="movie-page-card-div-img">
-                    <a className="movie-page-a" href=""><img className="movie-page-card-img" src={moviee.movielbImg} alt="" /></a>
+                    <a className="movie-page-a" onClick={() => {
+                      window.location.href = "/Moviebook/" + moviee._id;
+                    }}><img className="movie-page-card-img" src={moviee.movielbImg} alt="" /></a>
                   </div>
                   <p className="movie-page-p" >{moviee.movieName}</p>
                   <p className="movie-page-p1" >{moviee.language} . {moviee.genres} . {moviee.year}</p>

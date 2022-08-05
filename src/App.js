@@ -5,6 +5,7 @@ import Movie from "./views/movies/movie";
 import Contact from "./views/contact/contact";
 import Register from "./views/register/register";
 import Login from "./views/login/login";
+import Moviebook from "./views/moviebook/moviebook";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route exact path='/Contact' element={<Contact />} />
           <Route exact path='/Register' element={<Register />} />
           <Route exact path='/Login' element={<Login />} />
+          <Route exact path='/Moviebook/:movieid' element={<Moviebook />} />
         </Routes>
     </Router>
   );

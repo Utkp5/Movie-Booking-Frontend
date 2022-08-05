@@ -1,0 +1,20 @@
+*
+{
+    margin: 0;
+}
+.return_div_moviebook
+{
+    background-color: #202020;
+}
+.movie-book-card-img
+{
+    height: 70vh;
+}
+.movie-book-flex
+{
+    border: 2px solid red;
+}
+.movie-book-p
+{
+  color: ghostwhite;   
+}
