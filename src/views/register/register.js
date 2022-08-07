@@ -2,6 +2,9 @@ import React,{useState} from "react";
 import "./register.css";
 import Navbar from "../../Components/navbar/navbar";
 import axios from "axios";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function Register() {
 
@@ -20,12 +23,13 @@ function Register() {
     await axios.post("http://localhost:5000/api/register",user).then(function (response) {
       
       if (response.data) {
+        toast.success("Registered Successfully");
         window.location.href = "/Login";
-        console.log("registered");
       }
       
 
     }).catch(function (error) {
+      toast.warning("Something Went Wrong!");
       console.log(error);
     });      
   }
@@ -68,7 +72,7 @@ function Register() {
             </p>
           </div>
           <p className="p-container">
-          <a href=""><span>Forgot password ?</span></a>
+          <a href="#"><span>Forgot password ?</span></a>
           <input type="submit" name="go" id="go" value="Sign up" onClick={() => {
             Handlesubmit();
           }}/>
@@ -76,6 +80,9 @@ function Register() {
         </div>
         
       </div>
+
+      <ToastContainer />
+
     </div>
   );
 }

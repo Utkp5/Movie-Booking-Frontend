@@ -1,4 +1,4 @@
-import React,{useState} from "react";
+import React,{useEffect, useState} from "react";
 import "./login.css";
 import Navbar from "../../Components/navbar/navbar";
 import axios from "axios";
@@ -20,14 +20,23 @@ function Signin() {
 
       if (response.data.token) {
         localStorage.setItem("token",response.data.token);
+        localStorage.setItem("userEmail",response.data.userEmail);
+        toast.success("Login Successfully");
         window.location.href = "/Movie";
       }
 
     }).catch(function (error) {
-      toast("Something Went Wrong!");
+      toast.warning("Invalid Credentials!");
       
     });
   }
+
+  // useEffect(() => {
+  //       if(!localStorage.getItem('token'))
+  //         {
+  //           window.location.href = "/Login";
+  //         } 
+  // });
 
 
 
