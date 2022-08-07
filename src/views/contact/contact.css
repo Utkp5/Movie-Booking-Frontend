@@ -95,3 +95,44 @@
     background-color: rgb(230, 53, 88);
     border: 2px solid rgb(230, 53, 88);
 }
+
+/* Responsive */
+
+@media (max-width:430px) {
+    .input-text-1
+    {
+        width: 35vw !important;
+    }
+    .input-text-2
+    {
+        width: 35vw !important;
+    }
+    .input-text-3
+    {
+        width: 35vw !important;
+    }
+    .input-text-4
+    {
+        width: 35vw !important;
+    }
+    .input-text-5
+    {
+        width: 80vw !important;
+    }
+    .contact_button
+    {
+        font-size: 1.5vh;
+    }
+    .contact_banner_div
+    {
+        padding: 43px 0px;
+    }
+    .contact_banner_p
+    {
+        font-size: larger;
+    }
+    .contact-form-p
+    {
+        font-size: 3vh;
+    }
+}

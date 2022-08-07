@@ -1,7 +1,7 @@
 .about_return_div
 {
     background-color: #202020;
-    height: 200vh;
+    height: 250vh;
 }
 .about_banner
 {
@@ -24,7 +24,7 @@
 {
     font-size: 4vh;
     color: ghostwhite;
-    margin: 39px 135px;
+    margin: 8vh 10vw;
 }
 .about_stats_svg_p
 {
@@ -78,7 +78,7 @@
     justify-content: space-around;
 }
  .about_img{
-    width: 36vw;
+    width: 85vh;
     filter: none;
 }
 .about_info_div_content
@@ -96,4 +96,114 @@ font-size: larger;
 margin-top: 40px;
 color: ghostwhite;
 
+}
+
+/* responsive */
+
+@media (max-width:800px) {
+    .our_stats_svg
+    {
+        width: 7vw;
+    }
+    #our_stats
+    {
+        margin: 6vh 8vw;
+    }
+    .our_stats_svg1
+    {
+        width: 4.5vw;
+    }
+}
+@media (max-width:550px) {
+    .our_stats_svg
+    {
+        width: 9vw;
+    }
+    .our_stats_svg1
+    {
+        width: 6.5vw;
+    }
+    #our_stats
+    {
+        font-size: 3.5vh;
+    }
+}
+@media (max-width:412px) {
+    #our_stats
+    {
+        font-size: 5vw;
+    }
+   .about_banner
+   {
+    padding: 60px 0px
+   }
+}
+@media (max-width:1110px) {
+    .about_content_p2
+    {
+        font-size: 3.5vh;
+        margin-top: 10px;
+    }
+}
+@media (max-width:960px) {
+    .about_info_div
+    {
+        height: 129vh;
+    }
+    .about_info_div_img
+    {
+        height: 125vh;
+    }
+    #about_info_div_flex
+    {
+        top: -121vh;
+        align-items: center;
+        flex-direction: column;
+    }
+    .about_info_div_content
+    {
+        width: 100vw;
+        text-align: center;
+        margin-top: 6vh;
+    }
+}
+@media (max-width:500px) {
+    .about_img
+    {
+        width: 70vh;
+    }   
+    .about_content_p2
+    {
+        font-size: 3.3vh;
+    }
+}
+@media (max-width:380px) {
+    .about_img
+    {
+        width: 55vh;
+    }   
+    .about_content_p2
+    {
+        font-size: 3.3vh;
+    }
+    .about_content_p1
+    {
+        font-size: larger;   
+    }
+    .about_content_p2
+    {
+        font-size: 2.9vh;
+    }
+    #about_info_div_flex
+    {
+        top: -114vh;
+    }
+    .about_banner
+    {
+        padding: 37px 0px;
+    }
+    .about_banner_p
+    {
+        font-size: x-large;
+    }
 }

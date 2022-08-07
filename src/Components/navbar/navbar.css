@@ -20,7 +20,7 @@
     margin-right: 2vw;
     background-color: transparent;
 }
-.navbar_elements a
+.navbar_elements #a
 {
     text-decoration: none;
     font-size: 3.5vh;
@@ -29,7 +29,7 @@
     color: white;
     background-color: transparent;
 }
-.navbar_elements a:hover
+.navbar_elements #a:hover
 {
     color: crimson;
     transition: all 0.5s;
@@ -56,9 +56,29 @@
     background-color: transparent;
     transition: all 0.5s;
 }
+
+/* .hamburger_svg
+{
+    display: none;
+    width: 2vh;
+} */
 @media (max-width:750px) {
     .navbar_elements
     {
         display: none;
     }
 }
+
+/* @media (max-width:750px) {
+    .hamburger_svg
+    {
+        display: block;
+    }
+} */
+@media (max-width:650px) {
+    .logo
+    {
+        width: 27vw;
+    }
+}
+

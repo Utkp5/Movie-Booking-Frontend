@@ -38,3 +38,25 @@
 {
     margin: 0vh 4vw;
 }
+.movie-book-button-div
+{
+    margin: 23vh 0vw;
+}
+.movie-book-button
+{
+    outline: none;
+    background-color: crimson;
+    border: 2px solid crimson;
+    padding: 1.5vh 1.5vw;
+    color: ghostwhite;
+    border-radius: 18px;
+    font-size: larger;
+    cursor: pointer;
+}
+.movie-book-button:hover
+{
+    background-color: cadetblue;
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.1);
+    border: 2px solid cadetblue
+}

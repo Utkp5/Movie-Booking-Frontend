@@ -10,13 +10,16 @@ function Navbar() {
       <div className="navbar">
         <div><img className="logo" src={logoo} alt="logo" /></div>
         <div className="navbar_elements">
-          <a href="/">Home</a>
-          <a href="/About">About</a>
-          <a href="/Movie">Movies</a>
-          <a href="/Contact">Contact</a>
-          <a href="/Register" className="signin_button"><button className="navbar_button" >Sign up</button></a>
-          <a href="Login" className="signin_button"><button className="navbar_button" >Log in</button></a>
+          <a href="/" id="a" >Home</a>
+          <a href="/About" id="a" >About</a>
+          <a href="/Movie" id="a" >Movies</a>
+          <a href="/Contact" id="a" >Contact</a>
+          <a href="/Register"   className="signin_button"><button className="navbar_button" >Sign up</button></a>
+          <a href="Login"   className="signin_button"><button className="navbar_button" >Log in</button></a>
+
+          
         </div>
+
       </div>
     </div>
   );
