@@ -2,8 +2,15 @@ import React,{useState} from "react";
 import Navbar from "../../Components/navbar/navbar";
 import Footer from "../../Components/footer/footer";
 import "./contact.css";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function Contact() {
+
+  
+
+
   return (
     <div className="contact_return_div">
       <Navbar />
@@ -21,6 +28,9 @@ function Contact() {
       <button className="contact_button">Submit Your Response</button>
 
       <Footer />
+
+      <ToastContainer />
+
     </div>
   );
 }

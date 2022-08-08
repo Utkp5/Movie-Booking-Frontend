@@ -20,8 +20,8 @@ function Signin() {
 
       if (response.data.token) {
         localStorage.setItem("token",response.data.token);
-        localStorage.setItem("userEmail",response.data.userEmail);
         toast.success("Login Successfully");
+        localStorage.setItem("userEmail",response.data.userEmail);
         window.location.href = "/Movie";
       }
 
