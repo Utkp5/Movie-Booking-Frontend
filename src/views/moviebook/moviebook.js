@@ -19,7 +19,7 @@ function Moviebook() {
         async function fetchData() {
           try {
             const data = (
-              await axios.get(`http://localhost:5000/api/movies/findmovies/${movieid}`, {})).data;
+              await axios.get(`https://moviebooking-utkarsh.herokuapp.com/api/movies/findmovies/${movieid}`, {})).data;
             setMoviebook(data);
             console.log(data);
           } catch (error) {

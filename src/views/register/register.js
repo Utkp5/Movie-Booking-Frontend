@@ -20,7 +20,7 @@ function Register() {
       userEmail,
       password,
     };
-    await axios.post("http://localhost:5000/api/register",user).then(function (response) {
+    await axios.post("https://moviebooking-utkarsh.herokuapp.com/api/register",user).then(function (response) {
       
       if (response.data) {
         toast.success("Registered Successfully");

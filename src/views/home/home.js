@@ -1,10 +1,9 @@
 import React from "react";
 import Navbar from "../../Components/navbar/navbar";
 import "./home.css";
-import img_1 from "../../Assets/img/banner/img1.jpg";
+import img_1 from "../../Assets/img/banner/img1.png";
 import img_2 from "../../Assets/img/banner/img2.jpg";
 import img_3 from "../../Assets/img/banner/img3.jpg";
-import img_4 from "../../Assets/img/banner/4.png";
 import laughterBanner from "../../Assets/img/laughter/laughter_utkp_banner.avif";
 import rupayBanner from "../../Assets/img/banner/rupay.avif";
 import "react-slideshow-image/dist/styles.css";
@@ -16,7 +15,7 @@ import MovieSecond from "../../Components/movies/movie_2";
 import Footer from "../../Components/footer/footer";
 
 function Home() {
-  const firstSlideShow = [img_1, img_2, img_3, img_4];
+  const firstSlideShow = [img_1, img_2, img_3];
   const secondSlideShow = [
     "https://img.freepik.com/premium-vector/cinema-poster-night-film-movies-popcorn-retro-movie-posters-template-illustration-set_102902-1871.jpg?w=2000",
     "https://asicsulb.org/corporate/images/connect/beachfront/2018-03/Movies-on-the-House.jpg",

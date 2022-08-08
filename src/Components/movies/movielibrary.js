@@ -12,7 +12,7 @@ function Movielb() {
     async function fetchData() {
       try {
         const data = (
-          await axios.get("http://localhost:5000/api/movies/getallmovies", {})
+          await axios.get("https://moviebooking-utkarsh.herokuapp.com/api/movies/getallmovies", {})
         ).data;
         setmovie(data);
         console.log(data);
