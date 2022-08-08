@@ -8,8 +8,27 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function Contact() {
 
-  
+  const [Name,setName] = useState("");
+  const [email,setemail] = useState("");
+  const [phone,setphone] = useState("");
+  const [subject,setsubject] = useState("");
+  const [message,setmessage] = useState("");
 
+
+  const Handlecontact = () => {
+    if (!(Name && email && phone && subject && message)) {
+      toast.warning("Empty Response Can not be Submitted")
+    }
+    else{
+      toast.success("Your Response has been Submitted Successfully")
+      setName(' ');
+      setemail(' ');
+      setphone(' ');
+      setsubject(' ');
+      setmessage(' ');
+    }
+  }
+  
 
   return (
     <div className="contact_return_div">
@@ -19,13 +38,25 @@ function Contact() {
       </div>
       <div className="contact-form">
         <p className="contact-form-p">How Can We Help You ?</p>
-        <input className="input-text-1" type="Name" name="Name" id="Name" placeholder="Name"/>
-        <input className="input-text-2" type="email" name="email" id="email" placeholder="Email"/>
-        <input className="input-text-3" type="phone" name="Name" id="Name" placeholder="Phone No"/>
-        <input className="input-text-4" type="subject" name="Name" id="Name" placeholder="Subject"/>
-        <input className="input-text-5" type="message" name="Name" id="Name" placeholder="Message"/>
+        <input className="input-text-1" type="Name" name="Name" id="Name" placeholder="Name" value={Name} onChange={(e) => {
+          setName(e.target.value);
+        }}/>
+        <input className="input-text-2" type="text" name="email" id="email" placeholder="Email" value={email} onChange={(e) => {
+          setemail(e.target.value);
+        }}/>
+        <input className="input-text-3" type="phone" name="phone" id="phone" placeholder="Phone No" value={phone} onChange={(e) => {
+          setphone(e.target.value);
+        }}/>
+        <input className="input-text-4" type="subject" name="subject" id="subject" placeholder="Subject" value={subject} onChange={(e) => {
+          setsubject(e.target.value);
+        }}/>
+        <input className="input-text-5" type="message" name="message" id="message" placeholder="Message" value={message} onChange={(e) => {
+          setmessage(e.target.value);
+        }}/>
       </div>
-      <button className="contact_button">Submit Your Response</button>
+      <button className="contact_button" onClick={() => {
+        Handlecontact();
+      }}>Submit Your Response</button>
 
       <Footer />
 

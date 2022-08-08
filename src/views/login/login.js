@@ -21,7 +21,7 @@ function Signin() {
       if (response.data.token) {
         localStorage.setItem("token",response.data.token);
         toast.success("Login Successfully");
-        localStorage.setItem("userEmail",response.data.userEmail);
+        localStorage.setItem("userEmail",userEmail);
         window.location.href = "/Movie";
       }
 
