@@ -49,10 +49,7 @@ function Navbar() {
           <a href={inoutDirection}       className="signin_button"><button className="navbar_button" onClick={() => {
             Handlechange();
           }}>{inout}</button></a>
-
-          
         </div>
-
       </div>
     </div>
   );

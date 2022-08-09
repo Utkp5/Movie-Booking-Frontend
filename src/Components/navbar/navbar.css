@@ -57,22 +57,25 @@
     transition: all 0.5s;
 }
 
-/* .hamburger_svg
+/* .hamburger
 {
     display: none;
-    width: 2vh;
 } */
 @media (max-width:750px) {
-    .navbar_elements
-    {
+    #a
+     {
         display: none;
-    }
+     }
+     .signin_button
+     {
+        display: none;
+     }
 }
 
 /* @media (max-width:750px) {
-    .hamburger_svg
+    .hamburger
     {
-        display: block;
+       display: block;
     }
 } */
 @media (max-width:650px) {
