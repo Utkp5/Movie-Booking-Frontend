@@ -3,8 +3,8 @@ import "./moviebook.css";
 import { useState , useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import Swal from 'sweetalert2'
+
 
 function Moviebook() {
 
@@ -42,14 +42,22 @@ function Moviebook() {
                 <p className="movie-book-p2" >{Moviebook.time}</p>
                 <div className='movie-book-button-div'>
                 <button className='movie-book-button' onClick={() => setalert(!alert)
-                  `${alert ? toast.warning(" You have Already Booked Your Movie") : toast.success("Movie Booked Successfully")}`
+                  `${alert ? Swal.fire(
+                    'Just Book!',
+                    'Sorry ! You have Already Booked Your Movie ',
+                    'warning'
+                  )
+                  : Swal.fire(
+                    'Just Book!',
+                    'Thank You ! You have Successfully Booked Your Movie',
+                    'success'
+                  )}`
                 }>
                 Proceed To Book</button>
                 </div>
             </div>
         </div>
 
-      <ToastContainer />
 
     </div>
   )
