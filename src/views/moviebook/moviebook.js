@@ -3,7 +3,7 @@ import "./moviebook.css";
 import { useState , useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import Swal from 'sweetalert2'
+import Swal from 'sweetalert2';
 
 
 function Moviebook() {
@@ -28,7 +28,29 @@ function Moviebook() {
         }
         fetchData();
       }, []);
-    
+
+
+      async function handleBooking()
+      {
+
+          const userId = {id : localStorage.getItem("userid")}
+          console.log(userId);
+          await axios.post(`https://moviebooking-utkarsh.herokuapp.com/api/Moviebook/${movieid}`,userId).then(function (response)
+      {
+        if(response.data)
+        {
+          setalert(!alert) 
+          `${alert ? Swal.fire(
+            'Just Book!',
+            'Thank You ! You have Successfully Booked Your Movie',
+            'success'
+            ) : null }`
+        }
+      }).catch(function (error)
+      {
+        console.log(error);
+      })
+  }
 
   return (
     <div className='return_div_moviebook'>
@@ -41,18 +63,9 @@ function Moviebook() {
                 <p className="movie-book-p1" >{Moviebook.language} . {Moviebook.genres} . {Moviebook.year}</p>
                 <p className="movie-book-p2" >{Moviebook.time}</p>
                 <div className='movie-book-button-div'>
-                <button className='movie-book-button' onClick={() => setalert(!alert)
-                  `${alert ? Swal.fire(
-                    'Just Book!',
-                    'Sorry ! You have Already Booked Your Movie ',
-                    'warning'
-                  )
-                  : Swal.fire(
-                    'Just Book!',
-                    'Thank You ! You have Successfully Booked Your Movie',
-                    'success'
-                  )}`
-                }>
+                <button className='movie-book-button' onClick={() => {
+                  handleBooking();
+                }}>
                 Proceed To Book</button>
                 </div>
             </div>

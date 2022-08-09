@@ -25,10 +25,8 @@ function Navbar() {
 
    const Handlechange = () => {
     let tokenval = localStorage.getItem("token");
-    let userEmail = localStorage.getItem("userEmail");
-    if (tokenval && userEmail) {
+    if (tokenval) {
       localStorage.removeItem("token");
-      localStorage.removeItem("userEmail");
     }
    }
 

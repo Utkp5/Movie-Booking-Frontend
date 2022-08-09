@@ -18,10 +18,12 @@ function Signin() {
     };
     await axios.post("https://moviebooking-utkarsh.herokuapp.com/api/Login",user).then(function (response) {
 
+
+      console.log(response.data.userid);
       if (response.data.token) {
         localStorage.setItem("token",response.data.token);
         toast.success("Login Successfully");
-        localStorage.setItem("userEmail",userEmail);
+        localStorage.setItem("userid",response.data.userid);
         window.location.href = "/Movie";
       }
 
