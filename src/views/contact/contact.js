@@ -26,6 +26,7 @@ function Contact() {
       setphone(' ');
       setsubject(' ');
       setmessage(' ');
+      window.location.href="/Contact";
     }
   }
   
@@ -55,7 +56,7 @@ function Contact() {
         }}/>
       </div>
       <button className="contact_button" onClick={() => {
-        Handlecontact();
+        Handlecontact(); 
       }}>Submit Your Response</button>
 
       <Footer />

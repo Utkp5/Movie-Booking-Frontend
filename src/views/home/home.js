@@ -23,6 +23,7 @@ function Home() {
   ];
   return (
     <div className="home_return_div">
+    
       <Navbar />
 
       <Zoom scale={0.7} indicators={true}>

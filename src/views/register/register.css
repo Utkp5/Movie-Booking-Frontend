@@ -4,15 +4,11 @@
 
 .register_container
 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 88vh;
-  /* background: blue; */
+  
+  height: 100vh;
   background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c2578c37-8569-4f88-b8f1-67a26a9ddcdd/4f46d201-48d4-40a7-9bfb-8e260d680912/IN-en-20220725-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  /* filter: blur(1px); */
 }
 .form {
   background: #111;
@@ -20,7 +16,9 @@
   border-radius: 0.4em;
   border: 1px solid #191919;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  top: 16vh;
+  left: 37vw;
   box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
 }
 

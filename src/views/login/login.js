@@ -48,7 +48,7 @@ function Signin() {
 
       <div className="signin_container">
 
-        <div className="form">
+        <div className="login_form">
           <h1>Welcome Back</h1>
           <div class="inset">
             

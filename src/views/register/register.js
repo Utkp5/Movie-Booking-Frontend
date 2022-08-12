@@ -34,11 +34,10 @@ function Register() {
     });      
   }
   return (
-    <div>
+    <div className="register_container">
       <Navbar />
 
-      <div className="register_container">
-
+        
         <div className="form">
           <h1>Welcome Back</h1>
           <div class="inset">
@@ -78,8 +77,7 @@ function Register() {
           }}/>
           </p>
         </div>
-        
-      </div>
+
 
       <ToastContainer />
 

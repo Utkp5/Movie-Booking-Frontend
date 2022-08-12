@@ -4,23 +4,20 @@
   
   .signin_container
   {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 88vh;
-    /* background: blue; */
+    height: 100vh;
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c2578c37-8569-4f88-b8f1-67a26a9ddcdd/4f46d201-48d4-40a7-9bfb-8e260d680912/IN-en-20220725-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* filter: blur(1px); */
   }
-  .form {
+  .login_form {
     background: #111;
     width: 365px;
     border-radius: 0.4em;
     border: 1px solid #191919;
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    top: 30vh;
+    left: 35vw;
     box-shadow: 0 5px 10px 5px rgba(0, 0, 0, 0.2);
   }
   
@@ -29,7 +26,7 @@
     border-top: 1px solid #19191a;
   }
   
-  .form h1 {
+  .login_form h1 {
     font-size: 18px;
     text-shadow: 0 1px 0 black;
     text-align: center;
@@ -39,7 +36,7 @@
     color: white;
   }
   
-  .form h1:after {
+  .login_form h1:after {
     content: "";
     display: block;
     width: 250px;

@@ -7,9 +7,9 @@ import Swal from 'sweetalert2';
 
 
 function Moviebook() {
-
+    
     const[Moviebook,setMoviebook] = useState({})
-    const[alert,setalert] = useState(false);
+    // const[alert,setalert] = useState(false);
     const{movieid} = useParams();
 
     useEffect(() => {
@@ -39,12 +39,11 @@ function Moviebook() {
       {
         if(response.data)
         {
-          setalert(!alert) 
-          `${alert ? Swal.fire(
+           Swal.fire(
             'Just Book!',
             'Thank You ! You have Successfully Booked Your Movie',
             'success'
-            ) : null }`
+            )
         }
       }).catch(function (error)
       {
