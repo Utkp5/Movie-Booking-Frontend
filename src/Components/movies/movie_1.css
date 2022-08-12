@@ -51,3 +51,48 @@
     color: darkgray;
     text-align: initial;
 }
+/* Responsiveness */
+@media screen and (max-width:650px) {
+    .movies_p
+    {
+        font-size: 16px;
+    }
+    .movie_poster
+    {
+        height: 40vh;
+    }
+    .movie_name
+    {
+        font-size: 2.5vh;
+    }
+    .genres
+    {
+        font-size: 1.5vh;
+    }
+    .movie_1_container
+    {
+        margin-bottom: 12px;
+    }
+}
+@media screen and (max-width:375px) {
+    .movies_p
+    {
+        font-size: 10px;
+    }
+    .movie_poster
+    {
+        height: 30vh;
+    }
+    .movie_name
+    {
+        font-size: 1.5vh;
+    }
+    .genres
+    {
+        font-size: 1vh;
+    }
+    .movies_p
+    {
+        margin-top: 30px;
+    }
+}

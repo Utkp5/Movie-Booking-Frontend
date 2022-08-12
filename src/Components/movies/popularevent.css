@@ -68,3 +68,70 @@
     color: darkgray;
     text-align: initial;
 }
+/* Responsive */
+@media screen and (max-width:1024px) {
+    .popular_container
+    {
+        justify-content: space-between;
+    }
+    
+}
+@media screen and (max-width:830px) {
+    .popular_container
+    {
+        justify-content: space-evenly;
+    }
+    .popular_img
+    {
+        width: 188px;
+    }
+}
+
+@media screen and (max-width:530px) {
+    .popular_img
+    {
+        width: 130px;
+    }
+    .popular_name
+    {
+        font-size: 2vh;
+    }
+    .popular_subname
+    {
+        font-size: x-small;
+    }
+    .featured_info_p1
+    {
+        font-size: x-large;
+    }
+    .featured_info_p2
+    {
+        font-size: large;
+    }
+    .featured
+    {
+        margin-top: 70px;
+    }
+    .popular_container 
+    {
+        margin-top: -200px;
+    }
+}
+@media screen and (max-width:390px) {
+    .popular_container
+    {
+        justify-content: space-evenly;
+    }
+    .popular_img
+    {
+        width: 115px;
+    }
+    .popular_name
+    {
+        font-size: 1.5vh;
+    }
+    .popular_subname
+    {
+        font-size: 1vh;
+    }
+}

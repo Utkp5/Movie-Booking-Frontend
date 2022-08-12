@@ -49,3 +49,64 @@ border-radius: 2%;
     color: darkgray;
     text-align: initial;
 }
+/* Responsive */
+@media screen and (max-width:945px) {
+    .movie2_p
+    {
+        font-size: x-large;
+        
+    }
+    .movie2_container
+    {
+        margin: 0px 0px;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:770px) {
+    .movie2_img
+    {
+        height: 44vh;
+    }
+    .movie2_p
+    {
+        text-align: center;
+    }
+}
+@media screen and (max-width:530px) {
+    .movie2_img
+    {
+        height: 30vh;
+    }
+    .movie2_p
+    {
+        font-size: large;
+    }
+    .movie2_name
+    {
+        font-size: 2vh;
+    }
+    .movie2Genres
+    {
+        font-size: x-small;
+    }
+}
+@media screen and (max-width:425px) {
+    .movie2_img
+    {
+        height: 28vh;
+    }
+    .movie2_p
+    {
+        width: 70vw;
+        font-size: 2.5vh;
+        margin-top: 44px;
+    }
+    .movie2_name
+    {
+        font-size: 2vh;
+    }
+    .movie2Genres
+    {
+        font-size: 1.5vh;
+    }
+}

@@ -54,7 +54,7 @@ function Navbar() {
                  }}>{inout}</button></a></li>
                  </ul>
                  <div className="menu_icon" onClick={() => setmenu(!menu)}>
-                    {menu ? <HiX size={36} color="white"/> :<HiMenu size={36} color="white"/>}
+                    {menu ? <HiX size={26} color="white"/> :<HiMenu size={26} color="white"/>}
                  </div> 
            
       </div>

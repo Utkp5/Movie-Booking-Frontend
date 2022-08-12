@@ -56,4 +56,11 @@
 }
 .Factscontainer_1:hover .movieFacts_overlay {
     height: 100%;
-  }
+}
+/* Responsive */
+@media screen and (max-width:1000px) {
+    .movieFacts_main
+    {
+        display: none;
+    }
+}

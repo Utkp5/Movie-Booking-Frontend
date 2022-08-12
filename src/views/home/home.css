@@ -28,3 +28,23 @@
     margin-top: 135px;
     width: 98vw;
 }
+/* Responsive */
+@media screen and (max-width:425px) {
+    .laughter_banner
+    {
+        margin-top: 55px;
+        width: 100vw;
+    }
+}
+@media screen and (max-width:1024px) {
+    .rupay_banner
+    {
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:770px) {
+    .rupay_banner
+    {
+        display: none;
+    }
+}
