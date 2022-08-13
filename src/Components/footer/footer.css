@@ -118,7 +118,7 @@ margin: 0vh -0.5vw;
 @media (max-width:570px) {
     footer
     {
-        height: 27rem;
+        height: 30rem;
     }
     .svg
     {
@@ -139,6 +139,10 @@ margin: 0vh -0.5vw;
     .footer_owner_svg
     {
         width: 30px;
+    }
+    .footer_owner
+    {
+        margin: 7vh 0vw;    
     }
 }
 @media (max-width:430px) {
@@ -167,6 +171,10 @@ margin: 0vh -0.5vw;
     .footer_p
     {
         font-size: xx-small;
+    }
+    .footer_owner
+    {
+        margin: 12vh 0vw;
     }
     .footer_owner_svg
     {

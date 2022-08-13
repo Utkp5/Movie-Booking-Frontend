@@ -102,7 +102,7 @@ li {
         background-color: #242424;
         list-style: none;
         left: 0;
-        top: 65px;
+        top: 63px;
         text-align: center;
         /* animation: slider 1s 1 forward ease-in; */
         animation-name: slider;
@@ -121,6 +121,7 @@ li {
     li
     {
         padding: 3vh 0vw;
+        width: 80vw;
     }
     .menu_icon
     {
@@ -130,6 +131,20 @@ li {
         right: 12px;
         transition: all 0.5s ease-in-out;
     }
+    .navbar_button 
+    {
+        font-size: 2.5vh;
+    }
+    #a
+    {
+        font-size: 2.5vh;
+    }
+    
 }
-
+@media screen and  (max-width:425px) {
+    .navbar
+    {
+        height: 10vh;
+    }
+}
 

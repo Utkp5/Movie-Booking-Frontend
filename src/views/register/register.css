@@ -5,7 +5,7 @@
 .register_container
 {
   
-  height: 100vh;
+  height: 110vh;
   background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/c2578c37-8569-4f88-b8f1-67a26a9ddcdd/4f46d201-48d4-40a7-9bfb-8e260d680912/IN-en-20220725-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -132,4 +132,85 @@ input[type="password"]:hover,
 label:hover ~ input[type="text"],
 label:hover ~ input[type="password"] {
   background: #27292c;
+}
+/* Responsive */
+@media screen and (max-width:1440px) {
+  .register_container 
+  {
+    height: 110vh;
+  }
+}
+@media screen and (max-width:1024px) {
+  .form 
+  {
+    left: 30vw;  
+  }
+}
+@media screen and (max-width:500px) {
+  .form 
+  {
+    left: 20vw;  
+  }
+}
+@media screen and (max-width:490px) {
+  .form
+  {
+    width: 275px;
+    top: 20vh;
+  }
+  .register_container
+  {
+    height: 105vh;
+  }
+  .form h1
+  {
+    font-size: 14px;
+  }
+  .register_p
+  {
+    padding: 0vh 3vw;
+  }
+  label
+  {
+    font-size: 1.5vh;
+  }
+  input[type="text"]
+  {
+    width: 40vw;
+  }
+  .p-container
+  {
+    padding: 0 9vw 20px 36px;
+  }
+  .p-container span
+  {
+    font-size: 1.5vh;
+  }
+  input[type="submit"]
+  {
+   padding: 5px 14px; 
+   font-size: 10px;
+  }
+}
+@media screen and (max-width:375px) {
+  .form 
+  {
+    left: 46px;  
+  }
+  .register_container
+  {
+    height: 105vh;
+  }
+}
+@media screen and (max-width:325px) {
+  .form 
+  {
+    left: 25px;  
+  }
+}
+@media screen and (max-width:305px) {
+  .form 
+  {
+    left: 3px;  
+  }
 }

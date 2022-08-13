@@ -41,25 +41,25 @@ function Register() {
         <div className="form">
           <h1>Welcome Back</h1>
           <div class="inset">
-            <p>
+            <p className="register_p">
               <label for="firstName">FIRST NAME</label>
               <input type="text" name="firstName" id="firstName"  onChange={(e) => {
                 setfirstname(e.target.value);
               }}/>
             </p>
-            <p>
+            <p className="register_p">
               <label for="lastName">LAST NAME</label>
               <input type="text" name="lastName" id="lastName"  onChange={(e) => {
                 setlastname(e.target.value);
               }}/>
             </p>
-            <p>
+            <p className="register_p">
               <label for="email">EMAIL ADDRESS</label>
               <input type="text" name="email" id="email" onChange={(e) => {
                 setuseremail(e.target.value);
               }} />
             </p>
-            <p>
+            <p className="register_p">
               <label for="password">PASSWORD</label>
               <input type="password" name="password" id="password" onChange={(e) => {
                 setpassword(e.target.value);

@@ -132,4 +132,47 @@
   label:hover ~ input[type="password"] {
     background: #27292c;
   }
-  
+  /* Responsive */
+  @media screen and (max-width:690px) {
+    .login_form
+    {
+      left: 22vw;
+    }
+  }
+  @media screen and (max-width:550px) {
+    .login_form
+    {
+      left: 16vw;
+    }
+  }
+  @media screen and (max-width:450px) {
+    .login_form
+    {
+      left: 9vw;
+    }
+  }
+  @media screen and (max-width:425px) {
+    .login_form
+    {
+      width: 250px;
+      left: 20vw;
+    }
+    .signin_container
+    {
+      height: 88vh;
+    }
+  }
+  @media screen and (max-width:325px) {
+    .login_form
+    {
+      width: 250px;
+      left: 12vw;
+    }
+  }
+  @media screen and (max-width:290px) {
+    .login_form
+    {
+      width: 250px;
+      left: 4vw;
+    }
+  }
