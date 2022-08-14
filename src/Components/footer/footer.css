@@ -159,10 +159,11 @@ margin: 0vh -0.5vw;
         margin: 0vh 1vw;
     }
 }
-@media (max-width:380px) {
-    .footer
+@media (max-width:370px) {
+    footer
     {
-        height: 27rem;
+        height: 28rem;
+        margin-top: 55px;
     }
     .svg
     {
@@ -203,4 +204,11 @@ margin: 0vh -0.5vw;
     .footer_owner_svg{
         width: 19px;
     }
+}
+@media (max-width:325px) {
+    footer
+    {
+        height: 32rem;
+    }
+
 }

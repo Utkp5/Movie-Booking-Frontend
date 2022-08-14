@@ -136,3 +136,10 @@
         font-size: 3vh;
     }
 }
+@media (max-width:395px) {
+    .contact_return_div
+    {
+        height: 186vh;
+    }
+    
+}
