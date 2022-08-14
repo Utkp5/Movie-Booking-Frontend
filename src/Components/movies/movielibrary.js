@@ -24,7 +24,7 @@ function Movielb() {
   }, []);
 
   return (
-    <div>
+    <div className="movie-return-div">
     <div class="movie-page-banner">
         <p className="movie-page-banner-p">Have original experience of the movie on day first</p>
       </div>

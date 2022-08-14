@@ -60,3 +60,66 @@
     transform: scale(1.1);
     border: 2px solid cadetblue
 }
+/* Responsive */
+@media (max-width:740px) {
+    .return_div_moviebook
+    {
+        height: 140vh;
+    }
+    .movie-book-flex
+    {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -30vh;
+    }
+    .movie-book-card-img
+    {
+        height: 60vh;
+    }
+    .movie-book-button-div
+    {
+        margin: 5vh 0vw;
+    }
+}
+@media (max-width:450px) {
+    .return_div_moviebook
+    {
+        height: 100vh;
+    }
+    .movie-book-flex
+    {
+        flex-direction: column;
+        align-items: center;
+        margin-top: -30vh;
+    }
+    .movie-book-card-img
+    {
+        height: 35vh;
+    }
+    .movie-book-button-div
+    {
+        margin: 5vh 0vw;
+    }
+    .movie-book-div2
+    {
+        margin: 2vh 10vw;
+        margin-left: -4vw;
+    }
+    .movie-book-p
+    {
+        font-size: 2.5vh;
+    }
+    .movie-book-p1
+    {
+        font-size: 2vh;
+    }
+    .movie-book-p2
+    {
+        font-size: 2vh;
+    }
+    .movie-book-button
+    {
+        padding: 1.5vh 1.5vw;
+        font-size: 2vh;
+    }
+}
