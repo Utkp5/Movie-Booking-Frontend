@@ -167,14 +167,14 @@ color: ghostwhite;
         margin-top: 6vh;
     }
 }
-@media (max-width:500px) {
+@media (max-width:425px) {
     .about_img
     {
-        width: 70vh;
+        width: 60vh;
     }   
     .about_content_p2
     {
-        font-size: 3.3vh;
+        font-size: 3vh;
     }
 }
 @media (max-width:380px) {
@@ -206,4 +206,23 @@ color: ghostwhite;
     {
         font-size: x-large;
     }
+}
+@media screen and (max-width:395px) {
+    .about_return_div
+    {
+        height: 270vh;
+    }
+    .about_info_div
+    {
+        height: 115vh;
+    }
+    .about_img
+    {
+        width: 90vw;
+    }
+    .about_content_p2
+    {
+        font-size: 2.5vh;
+    }
+
 }
