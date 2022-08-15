@@ -74,6 +74,37 @@
         margin-bottom: 12px;
     }
 }
+@media screen and (max-width:500px) {
+    .movie_1_container    {
+        justify-content: space-between;
+    }
+    .movie_poster
+    {
+        height: 30vh;
+    }
+    .movie_name
+    {
+        font-size: 1.5vh;
+    }
+    .genres
+    {
+        font-size: 1vh;
+    }
+    .main
+    {
+        margin: 5vh 2vw;
+    }
+}
+@media screen and (max-width:320px) {
+    .movie_1_container    {
+        justify-content: space-evenly;
+    }
+    .main
+    {
+        margin: 5vh 2vw;
+    }
+}
+
 @media screen and (max-width:375px) {
     .movies_p
     {
@@ -94,5 +125,11 @@
     .movies_p
     {
         margin-top: 30px;
+    }
+}
+@media screen and (max-width:400px) {
+    .main
+    {
+        margin: 3vh 2vw;
     }
 }

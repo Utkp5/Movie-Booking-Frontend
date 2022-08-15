@@ -110,3 +110,37 @@ border-radius: 2%;
         font-size: 1.5vh;
     }
 }
+@media screen and (max-width:375px) {
+    .movie2_img
+    {
+        height: 21vh;
+    }
+    .movie2_p
+    {
+        width: 70vw;
+        font-size: 2.5vh;
+        margin-top: 44px;
+    }
+    .movie2_name
+    {
+        font-size: 2vh;
+    }
+    .movie2Genres
+    {
+        font-size: 1.5vh;
+    }
+}
+@media screen and (max-width:400px) {
+    .movie2_img
+    {
+        height: 23vh;
+    }
+    .movie2_name
+    {
+        font-size: 1.5vh;
+    }
+    .movie2Genres
+    {
+        font-size: 1.3vh;
+    }
+}

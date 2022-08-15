@@ -29,13 +29,6 @@
     width: 98vw;
 }
 /* Responsive */
-@media screen and (max-width:425px) {
-    .laughter_banner
-    {
-        margin-top: 55px;
-        width: 100vw;
-    }
-}
 @media screen and (max-width:1024px) {
     .rupay_banner
     {
@@ -46,5 +39,12 @@
     .rupay_banner
     {
         display: none;
+    }
+}
+@media screen and (max-width:425px) {
+    .laughter_banner
+    {
+        margin-top: 55px;
+        width: 100vw;
     }
 }
