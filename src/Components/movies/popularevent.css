@@ -165,6 +165,11 @@
   }
   .popular_container {
     margin-top: -45vh;
+    justify-content: center;
+  }
+  .popular_img
+  {
+    width: 130px;
   }
 }
 @media screen and (max-width: 280px) {
