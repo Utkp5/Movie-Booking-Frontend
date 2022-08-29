@@ -3,6 +3,7 @@ import "./navbar.css";
 import logoo from "../../Assets/img/logo.png"
 import { HiMenu } from "react-icons/hi";
 import { HiX } from "react-icons/hi";
+import { NavLink } from "react-router-dom";
 
 function Navbar() {
 
@@ -41,17 +42,17 @@ function Navbar() {
           <div><img className="logo" src={logoo} alt="logo" /></div>
 
               <ul className={menu ? 'navbar_mobile_css' : 'navbar_ul'}>
-                 <li><a href="/" id="a" >Home</a></li>
-                 <li><a href="/About" id="a" >About</a></li>
-                 {! localStorage.getItem("token") ?  null : <li><a href="/Movie" id="a" >Movies</a></li>   }
-                 <li><a href="/Contact" id="a" >Contact</a></li>
+                 <li><NavLink to="/" id="a" >Home</NavLink></li>
+                 <li><NavLink to="/About" id="a" >About</NavLink></li>
+                 {! localStorage.getItem("token") ?  null : <li><NavLink to="/Movie" id="a" >Movies</NavLink></li>   }
+                 <li><NavLink to="/Contact" id="a" >Contact</NavLink></li>
                  {!localStorage.getItem("token")? // ye command signup button ko hide krne ke liye hai.
-                 <li><a href="/Register"    className="signin_button"><button className="navbar_button" >Sign up</button></a></li>
+                 <li><NavLink to="/Register"    className="signin_button"><button className="navbar_button" >Sign up</button></NavLink></li>
                  :null
                  }
-                 <li><a href={inoutDirection} className="signin_button"><button className="navbar_button" onClick={() => {
+                 <li><NavLink to={inoutDirection} className="signin_button"><button className="navbar_button" onClick={() => {
                    Handlechange();
-                 }}>{inout}</button></a></li>
+                 }}>{inout}</button></NavLink></li>
                  </ul>
                  <div className="menu_icon" onClick={() => setmenu(!menu)}>
                     {menu ? <HiX size={26} color="white"/> :<HiMenu size={26} color="white"/>}
