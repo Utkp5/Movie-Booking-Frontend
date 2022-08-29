@@ -54,7 +54,9 @@ function MovieSecond() {
             return (
             <div className="movie2_main">
               <div className="movie2_img_div">
-                <img className="movie2_img" src={movie2.movie2Img} alt="" />
+                <img className="movie2_img" src={movie2.movie2Img} alt="" onClick={() => {
+                  {!localStorage.getItem("token") ? null : window.location.href="/Movie"}
+                }}/>
               </div>
               <div className="movie2_name">{movie2.movie2Name}</div>
               <div className="movie2Genres">{movie2.movie2Genres}</div>
