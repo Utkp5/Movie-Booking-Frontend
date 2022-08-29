@@ -27,7 +27,7 @@ function Popularevent() {
         },
         {
             popularImg : require ("../../Assets/img/laughter/laughter_utkp_5.jpg"),
-            popularName : "A Standup Comedy Show",
+            popularName : "A Standup Comedy",
             popularSubname : "Maharana Auditorium Noida",
         },
         {
