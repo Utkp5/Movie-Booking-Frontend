@@ -9,8 +9,8 @@ import Swal from 'sweetalert2';
 function Moviebook() {
     
     const[Moviebook,setMoviebook] = useState({})
-    const[mprice,setmprice] = useState({price: "Rs.99 Only"
-});
+    const[mprice,setmprice] = useState({price: "Rs.99 Only"});
+    const [disable, setDisable] = useState(false);
     const{movieid} = useParams();
 
     useEffect(() => {
@@ -83,9 +83,7 @@ function Moviebook() {
                 <p className="movie-book-p2" >{Moviebook.time}</p>
                 <p className="movie-book-p2" >{mprice.price}</p>
                 <div className='movie-book-button-div'>
-                <button className='movie-book-button' onClick={() => {
-                  handleBooking();
-                }}>
+                <button className='movie-book-button' disabled={disable} onClick={() => {handleBooking(); setDisable(true)}}>
                 Proceed To Book</button>
                 </div>
             </div>
