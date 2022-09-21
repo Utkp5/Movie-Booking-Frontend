@@ -3,7 +3,9 @@ import "./Payment.css";
 
 function Payment() {
   return (
-    <div>Payment</div>
+    <div className='Payment_container'>
+    <div id='payment_pay'><button className='pay'>Pay</button></div>
+    </div>
   )
 }
 

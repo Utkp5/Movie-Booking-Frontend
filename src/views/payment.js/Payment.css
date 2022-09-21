@@ -1,0 +1,25 @@
+.Payment_container
+{
+    background-image: url("../../Assets/img/paymentgif.gif");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: black;
+    height: 100vh;   
+}
+#payment_pay
+{
+    position: absolute;
+    top: 390px;
+    right: 360px;
+}
+.pay
+{
+    padding: 5px 51px;
+    font-size: 22px;
+    font-family: monospace;
+    border: 2px solid;
+    border-radius: 8px;
+    color: gainsboro;
+    background: initial;
+    font-weight: bolder;
+}
