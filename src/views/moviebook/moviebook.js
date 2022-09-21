@@ -9,7 +9,8 @@ import Swal from 'sweetalert2';
 function Moviebook() {
     
     const[Moviebook,setMoviebook] = useState({})
-    // const[alert,setalert] = useState(false);
+    const[mprice,setmprice] = useState({price: "Rs.99 Only"
+});
     const{movieid} = useParams();
 
     useEffect(() => {
@@ -39,27 +40,36 @@ function Moviebook() {
       {
         if(response.data)
         {
-           Swal.fire(
-            'Just Book!',
-            'Thank You ! You have Successfully Booked Your Movie',
-            'success'
-            )
+          //  Swal.fire(
+          //   'Just Book!',
+          //   'Thank You ! You have Successfully Booked Your Movie',
+          //   'success'
+          //   )
+            Swal.fire({
+              title: 'Are you sure?',
+              text: "You Want to Proceed With the Payment",
+              icon: 'warning',
+              showCancelButton: true,
+              confirmButtonColor: '#3085d6',
+              cancelButtonColor: '#d33',
+              cancelButtonText: 'No,Cancel!',
+              confirmButtonText: 'Yes,Go ahead'
+            }).then((result) => {
+              if (result.isConfirmed) {
+                Swal.fire(
+                  'Deleted!',
+                  'Your file has been deleted.',
+                  'success'
+                )
+              }
+            })
         }
+        // window.location.href = "/Payment"
       }).catch(function (error)
       {
         console.log(error);
       })
   }
-  // const handlePayment = async () => {
-	// 	try {
-	// 		const orderUrl = "http://localhost:5000/api/Payment/orders";
-	// 		const { data } = await axios.post(orderUrl, { amount: book.price });
-	// 		console.log(data);
-	// 		initPayment(data.data);
-	// 	} catch (error) {
-	// 		console.log(error);
-	// 	}
-	// };
 
   return (
     <div className='return_div_moviebook'>
@@ -71,7 +81,7 @@ function Moviebook() {
                 <p className="movie-book-p" >{Moviebook.movieName}</p>
                 <p className="movie-book-p1" >{Moviebook.language} . {Moviebook.genres} . {Moviebook.year}</p>
                 <p className="movie-book-p2" >{Moviebook.time}</p>
-                <p className="movie-book-p2" >Rs.99 Only</p>
+                <p className="movie-book-p2" >{mprice.price}</p>
                 <div className='movie-book-button-div'>
                 <button className='movie-book-button' onClick={() => {
                   handleBooking();

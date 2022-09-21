@@ -6,6 +6,7 @@ import Contact from "./views/contact/contact";
 import Register from "./views/register/register";
 import Login from "./views/login/login";
 import Moviebook from "./views/moviebook/moviebook";
+import Payment from "./views/payment.js/Payment";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route exact path='/Register' element={<Register />} />
           <Route exact path='/Login' element={<Login />} />
           <Route exact path='/Moviebook/:movieid' element={<Moviebook />} />
+          <Route exact path='/Payment' element={<Payment />} />
         </Routes>
     </Router>
   );
