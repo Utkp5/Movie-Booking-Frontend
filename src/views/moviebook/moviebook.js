@@ -56,11 +56,7 @@ function Moviebook() {
               confirmButtonText: 'Yes,Go ahead'
             }).then((result) => {
               if (result.isConfirmed) {
-                Swal.fire(
-                  'Deleted!',
-                  'Your file has been deleted.',
-                  'success'
-                )
+                window.location.href = "/Payment"
               }
             })
         }
