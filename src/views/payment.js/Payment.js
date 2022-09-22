@@ -33,8 +33,13 @@ function Payment() {
             imageWidth: 300,
             imageHeight: 200,
             imageAlt: 'Custom image',
+            confirmButtonColor: '#3085d6',
+            confirmButtonText: 'OK'
+          }).then((result) => {
+            if (result.isConfirmed) {
+              window.location.href = "/";
+            }
           })
-          window.location.href = "/";
         } catch (error) {
           console.log(error);
         }
