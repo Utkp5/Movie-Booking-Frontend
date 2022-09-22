@@ -1,6 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 import React from 'react'
+import logop from "../../Assets/img/logo.png"
 import "./Payment.css";
 
 function Payment() {
@@ -8,7 +9,7 @@ function Payment() {
   const [mpayment,setmpayment] = useState({
     price: 99,
     movie: "Movie",
-    mimg: "../../Assets/img/paymentgif.gif"
+    mimg: {logop}
   });
   
   const initPayment = (data) => {
