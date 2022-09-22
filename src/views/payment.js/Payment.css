@@ -24,3 +24,11 @@
     font-weight: bolder;
     cursor: pointer;
 }
+
+@media (max-width:768px) {
+    #payment_pay
+    {
+        right: 300px;
+        top: 200px;
+    }
+}
