@@ -2,6 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 import React from 'react'
 import logop from "../../Assets/img/logo.png"
+import Swal from 'sweetalert2';
 import "./Payment.css";
 
 function Payment() {
@@ -18,7 +19,7 @@ function Payment() {
       amount: data.amount,
       currency: data.currency,
       name: mpayment.movie,
-      description: "Test Transaction",
+      description: "Pay to Pandit Utkarsh",
       image: mpayment.mimg,
       order_id: data.id,
       handler: async (response) => {
@@ -26,6 +27,13 @@ function Payment() {
           const verifyUrl = "https://moviebooking-utkarsh.herokuapp.com/api/Payment/verify";
           const { data } = await axios.post(verifyUrl, response);
           console.log(data);
+          Swal.fire({
+            text: 'Your Booking has been Confirmed',
+            imageUrl: 'https://cdn.dribbble.com/users/911154/screenshots/3332845/vfmov3.gif',
+            imageWidth: 300,
+            imageHeight: 200,
+            imageAlt: 'Custom image',
+          })
           window.location.href = "/";
         } catch (error) {
           console.log(error);

@@ -40,11 +40,6 @@ function Moviebook() {
       {
         if(response.data)
         {
-          //  Swal.fire(
-          //   'Just Book!',
-          //   'Thank You ! You have Successfully Booked Your Movie',
-          //   'success'
-          //   )
             Swal.fire({
               title: 'Are you sure?',
               text: "You Want to Proceed With the Payment",
