@@ -32,3 +32,10 @@
         top: 200px;
     }
 }
+@media (max-width:425px) {
+    #payment_pay
+    {
+        right: 130px;
+        top: 200px;
+    }
+}
