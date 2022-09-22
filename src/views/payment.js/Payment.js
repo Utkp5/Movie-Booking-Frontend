@@ -6,7 +6,7 @@ import "./Payment.css";
 function Payment() {
   
   const [mpayment,setmpayment] = useState({
-    price: "Rs.99",
+    price: 99,
     movie: "Movie",
     mimg: "../../Assets/img/paymentgif.gif"
   });
@@ -22,9 +22,10 @@ function Payment() {
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyUrl = "https://moviebooking-utkarsh.herokuapp.com/api/Payment/verify";
+          const verifyUrl = "http://localhost:5000/api/Payment/verify";
           const { data } = await axios.post(verifyUrl, response);
           console.log(data);
+          window.location.href = "/";
         } catch (error) {
           console.log(error);
         }
@@ -40,7 +41,7 @@ function Payment() {
   
   const handlePayment = async () => {
     try {
-      const orderUrl = "https://moviebooking-utkarsh.herokuapp.com/api/Payment/orders";
+      const orderUrl = "http://localhost:5000/api/Payment/orders";
 			const { data } = await axios.post(orderUrl, { amount: mpayment.price});
 			console.log(data);
 			initPayment(data.data);
